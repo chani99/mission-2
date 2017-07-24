@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mission-2</title>
+    <!--<script>
+        function sendAJAX(URL) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("redDiv").innerHTML = processData(JSON.parse(this.responseText));
+                    document.getElementById("redDiv").setAttribute("class", "redBackground");
+                }
+            };
+            xmlhttp.open("GET", URL);
+            xmlhttp.send();
+        }
+
+    </script>-->
+</head>
+
+<body>
+
+    <form action="connection.php" method="post">
+        <input type=number name="Wid" placeholder="worker id" />
+        </br>
+        <input type=text name="Wmame" placeholder="worker neme" />
+        </br>
+        <input type=date name="startDate" />
+        </br>
+
+        <button name="submit" value="get">get employee</button>
+        <button name="submit" value="add">add new</button>
+        <button name="submit" value="update">update</button>
+        <button name="submit" value="delete">delete</button>
+        <button name="submit" value="all">get all</button>
+    </form>
+
+</body>
+
+</html>
